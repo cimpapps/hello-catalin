@@ -27,7 +27,7 @@ public class HelloCatalinApplication {
 
     @GetMapping("/back")
     public String back() {
-       return restTemplate.getForEntity("http://localhost:8282", String.class).getBody();
+       return restTemplate.getForEntity("http://combo1-service:8282", String.class).getBody();
     }
 
     @Bean
